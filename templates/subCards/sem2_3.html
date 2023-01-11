@@ -1,0 +1,49 @@
+{% extends 'layout/base2.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+                {% block videos %}
+                <strong>Curso de nivelación de álgebra (álgebra pre-universitaria)</strong><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfHxLRQkpcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+
+                {% endblock %}
+                
+                {% block libros %}
+                <br>
+                <hr>
+                <br>
+                <ol class="libros">
+                    <li>
+                        <a href="https://drive.google.com/file/d/1w0IhKlak89O7hDtWEPQpc_HrakynOUCS/view" target="_blank">Álgebra | Armando O Rojo</a>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ol>
+
+                <br>
+                
+                <hr>
+                <br>
+                {% endblock %}
+                {% block precursos %}
+                <br>
+                <hr>
+                <br>
+                <ol class="libros">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ol>
+
+                <br>
+                
+                <hr>
+                <br>
+                {% endblock %}

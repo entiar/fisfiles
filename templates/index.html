@@ -1,0 +1,295 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style.css" %}'>
+{% endblock %}
+
+{% block principal %}
+
+<section class="container hero-main">
+    <div class="hero-text">
+        <h1 class="title">Recursos de Estudio<span class="title-active">Documentos realcionados al aprendisaje de la Física </span></h1>
+        <p class="copy">Nos encargamos de recopilar videos, imagenes y documentos relacionados a la carrera de fisica. 
+            <span class="copy-active">Actividades de física</span></p>
+        <a href="#cards-prin" class="cta">Ir a los recursos</a>
+        
+    </div>
+ <img src='{% static "imgs/flow.png" %}' alt="" class="mockup">
+ 
+</section>
+{% endblock %} 
+{% block content %} 
+        <section class="services" id="cards-prin">
+            <div class="container">
+                <h2 class="subtitle">
+                    Nuestro Contenido <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                <p class="copy-section">
+                    Ofrece una lista de contenido ordenados por Semestre.
+                </p>
+                <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+                    <div class="card">
+                        <a href="{% url 'sem1' %}">
+                        <img src='{% static "imgs/fi1.jpg"%}' alt="" class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                1° año.
+                            </p>
+                            <h3 class="card-title">1° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Física I, Algebra I, Calculo I, Quimica General y Cultura Andina.
+                            </p>
+                            <a href="{% url 'sem1' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!-- Fin del codigo de la targeta 1-->
+                    <div class="card"><!--comienso de la targeta 2-->
+                        <a href="{% url 'sem2' %}">
+                        <img src='{% static "imgs/fi2.png" %}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                1° Año.
+                            </p>
+                            <h3 class="card-title">2° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Álgebra lineal, Física II, Cálculo II y Programacíon I.
+                            </p>
+                            <a href="{% url 'sem2' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 2-->
+                    <div class="card"><!--Comienso de la targeta 3-->
+                        <a href="{% url 'sem3' %}">
+                        <img src='{% static "imgs/fis3.png" %}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                2° Año.
+                            </p>
+                            <h3 class="card-title">3° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Probabilidda y Estadística, Ecuaciones Diferenciales, Física III y Programacíon II.
+                            </p>
+                            <a href="{% url 'sem3' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                    <div class="card"><!--Comienzo de la targeta 4-->
+                        <a href="{% url 'sem4' %}">
+                        <img src='{% static "imgs/fis4.png" %}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                2° Año.
+                            </p>
+                            <h3 class="card-title">4° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Análisis Tensorial, Cálculo IV, Análisis Numérico, Mecánica Clásica y Electronica I.                            </p>
+                            <a href="{% url 'sem4' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 4-->
+                    <div class="card"><!--comienso de la targeta 5-->
+                        <a href="{% url 'sem5' %}">
+                        <img src='{% static "imgs/fi5.png"%}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                3° Año.
+                            </p>
+                            <h3 class="card-title">5° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Metodos Matemáticos I, Electromagnetismo, Laboratorio Medio I, Mecánica Cuántica I y Electrónica II.
+                            </p>
+                            <a href="{% url 'sem5' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 5-->
+                    <div class="card"><!--comienso de la targeta 6-->
+                        <a href="{% url 'sem6' %}">
+                        <img src='{% static "imgs/fis6.png" %}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                3° Año.
+                            </p>
+                            <h3 class="card-title">6° Semestre <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Métodos Mate    máticos II, Optica, Laboratorio Medio II, Termodinámica y Electrónica III.
+                            </p>
+                            <a href="{% url 'sem6' %}" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 6-->
+                    <div class="card"><!--comienso de la targeta 7-->
+                        <img src='{% static "imgs/ea.png"%}' class="card-img">
+                        <div class="card-text">
+                            <p class="card-list">
+                                Materias de Mención.
+                            </p>
+                            <h3 class="card-title">Energias Alternativa <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Energía Eólica, Energía Solar, Energia Hidraúlica, ...
+                            </p>
+                            <a href="#" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 7-->
+                    <div class="card"><!--comienso de la targeta 8-->
+                        <img src='{% static "imgs/sc.png" %}' class="card-img">
+                        <div class="card-text">
+                            <p class="card-list">
+                                Materias de Mención.
+                            </p>
+                            <h3 class="card-title">Ciencias Computaciones<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Modelaje y Simulación, Inteligencia Artificial, Robótica, ...
+                            </p>
+                            <a href="#" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 8-->
+                    <div class="card"><!--comienso de la targeta 9-->
+                        <img src='{% static "imgs/fm.png"%}' class="card-img">
+                        <div class="card-text">
+                            <p class="card-list">
+                                Materias de Mención.
+                            </p>
+                            <h3 class="card-title">Física <br>Médica<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Biomédica, Radiación y Dosimetria, Medicina nuclear, ...
+                            </p>
+                            <a href="#" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 9-->
+
+                </article>
+            </div>
+        </section>
+        <section class="proyect-container">
+            <div class="container">
+                <h2 class="subtitle">
+                    Nuestros Proyectos <span class="poin">.</span> <!--Subtitulo 2-->
+                </h2>
+                <p  class="copy-section">
+                    Estamos trabajando continuamente para generar nuevo conocimiento en Fisica, Estos son los mas recietes
+
+                </p>
+                <article class="container-bg"> <!--Comienso del codigo de la targeta de noticias destacadas-->
+                    <div class="card">
+                        <div class="card-text">
+                            <h3 class="card-title">Potcas cientificos <span class="point">.</span>
+                            <p class="card-date">
+                                25 de mayo 2022
+                            </p>
+                            </h3>
+                            <p class="card-copy">
+                                Mitos y verdades de los cientificos.
+                            </p>
+                            <a href="#" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 1 de post destacados-->
+                    <div class="background"><!--Targeta 2-->
+                        <img src='{% static "imgs/5.jpg"%}' class="background-img">
+                        <div class="background-text">
+                            <h3 class="backgrpound-title">
+                                Mitos de la física
+                            </h3>
+                            <p class="background-copy">
+                                Participacion con la comunidad universitaria.
+                            </p>
+                        </div>
+                    </div><!--Fin de la targeta2-->
+                    <div class="card"><!--Inicio de la targeta 3-->
+                        <div class="card-text">
+                            <h3 class="card-title">Ciencia de Datos<span class="point">.</span>
+                            <p class="card-date">
+                                23 de mayo 2022
+                            </p>
+                            </h3>
+                            <p class="card-copy">
+                                Estadistica inferencial
+                            </p>
+                            <a href="#" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                    <div class="background"><!--Inicio de la targeta 4-->
+                        <img src='{% static "imgs/6.jpg" %}' class="background-img">
+                        <div class="background-text">
+                            <h3 class="backgrpound-title">
+                                La carrera del futuro
+                            </h3>
+                            <p class="background-copy">
+                                Opcion laboral real para un licenciado en ciencias puras.
+                            </p>
+                        </div>
+                    </div><!--Fin de la targeta 4-->
+                </article>
+            </div>
+        </section>
+        <section class="testimony container">
+                <h2 class="subtitle">
+                    Personajes Destacadas <span class="poin">.</span>
+                </h2>
+                <p class="copy-section">
+                    Participantets activos en la pagina.    
+                </p>
+            <div class="testimony-container">
+                    <div class="testimony-card"><!--card testimony 1-->
+                        <img src='{% static "imgs/8.jpg"%}' alt="" class="testimony-img">
+                        <div class="testimony-copy">
+                            <i class='bx bxl-google testimony-logo'></i>
+                            <div class="testimony-info">
+                                <h3 class="testimony-name">
+                                Albert Einstein
+                                </h3>
+                                <p class="testimony-position">
+                                Cientifico
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony-card"><!--card testimony 2-->
+                        <img src='{% static "imgs/9.png"%}' alt="" class="testimony-img">
+                        <div class="testimony-copy">
+                            <i class='bx bxl-google testimony-logo'></i>
+                            <div class="testimony-info">
+                                <h3 class="testimony-name">
+                                Newton
+                                </h3>
+                                <p class="testimony-position">
+                                Cientifico
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony-card"><!--card testimony 3-->
+                        <img src='{% static "imgs/9.png"%}' alt="" class="testimony-img">
+                        <div class="testimony-copy">
+                            <i class='bx bxl-google testimony-logo'></i>
+                            <i class='bx bxl-facebook-circle' ></i>
+
+                            <div class="testimony-info">
+                                <h3 class="testimony-name">
+                                Newton
+                                </h3>
+                                <p class="testimony-position">
+                                Cientifico
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <div class="container container--modifier">
+        <h2 class="subtitle subtitle--modifier">
+             Como utilizar esta pagina <span class="poin">.</span> <!--Subtitulo 2-->
+        </h2>
+        <p class="copy-section copy-section-modifier">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus incidunt ad? Obcaecati quam sint nulla illo nesciunt eum voluptatem adipisci consequatur omnis molestiae blanditiis, itaque autem odit. Dolor, saepe.
+        </p>
+        </div>
+{% endblock %}

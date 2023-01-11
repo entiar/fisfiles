@@ -1,0 +1,101 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+{% block principal %}
+        <section class="services">
+            <div class="container">
+                <h2 class="subtitle">
+                Materias de Primer Trimestre <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                <p class="copy-section">
+                Contenido relacionado al plan de estudio de primer semestre de la carrera de Ciencias Física y Energias Alternaticas. 
+                </p>
+                <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+                    <div class="card"><!--comienso de la targeta 2-->
+                        <a href="{% url 'sem1_1' %}">
+                        <img src='{% static "imgs/algebra.png"%}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                MAT-100
+                            </p>
+                            <h3 class="card-title">Algebra I<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Funciones, rango y dominio Métodos de Demostraciones, etc.
+                            </p>
+                            <a href='{% url "sem1_1" %}' class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 2-->
+                    <div class="card"><!--Comienso de la targeta 3-->
+                        <a href="{% url 'sem1_2' %}">
+                        <img src='{% static "imgs/calculo.png"%}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                MAT-101
+                            </p>
+                            <h3 class="card-title">Calculo I<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Funciones, Limites, Desrivasdas, Integrales, etc.
+                            </p>
+                            <a href='{% url "sem1_2" %}' class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                    <div class="card"><!--Comienso de la targeta 3-->
+                        <a href="{% url 'sem1_3' %}">
+                        <img src='{% static "imgs/fi1.jpg"%}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                FIS-102
+                            </p>
+                            <h3 class="card-title">Física I<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Vectores, MRU, MRUV, Leyes de Newton, etc.
+                            </p>
+                            <a href='{% url "sem1_3" %}' class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                    <div class="card"><!--Comienso de la targeta 3-->
+
+                        <a href="{% url 'sem1_4' %}">
+                        <img src='{% static "imgs/quimica.png" %}' class="card-img">
+                        </a>
+                        
+                        <div class="card-text">
+                            <p class="card-list">
+                                QMC-103
+                            </p>
+                            <h3 class="card-title">Química G<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Nomenclatura, Enlace Químico, Estrucutura Molecular, etc.
+                            </p>
+                            <a href='{% url "sem1_4" %}' class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                    <div class="card">
+                        <a href="{% url 'sem1_5' %}">
+                        <img src='{% static "imgs/andina.png" %}' alt="" class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                CLA-104
+                            </p>
+                            <h3 class="card-title">Cultura Andina<span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Historia de Tihunaku, Cultura Aymara, Metodos de calculos Andinas, etc.
+                            </p>
+                            <a href='{% url "sem1_5" %}' class="card-button">Explorar</a>
+                        </div>
+                    </div><!-- Fin del codigo de la targeta 1-->
+                </article>
+            </div>
+        </section> 
+{% endblock %}              

@@ -1,0 +1,59 @@
+{% extends 'layout/base2.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+                {% block videos %}
+                <strong>Física 1 </strong><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FocD5JpAYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <strong>Física Exactas | Física 1 </strong><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FocD5JpAYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+
+                {% endblock %}
+                
+                {% block libros %}
+                <br>
+                <hr>
+                <br>
+                <ol class="libros">
+                    <li>
+                        <a href="https://fisicainfo.org/cbcfisica/archivos/Alonso_Finn_Fisica_Vol_I.pdf" target="_blank">Alonso Finn | Fisica Vol I.</a>
+                        <br>
+                        
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/1aJEqhUO2PteaH9WuYh62u-1R8X0GTUua/view">Física General Schaum | Bueche, Hetch - 10 Edición</a>
+                        <br>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1Hue5WQAXXBwUJ7c1CoKLPsIK2DcOCS1x/view">Física Para Ciencias e Ingeniería Volumen 1 | Serway, Jewett - 7 Edición</a>
+                        <br>
+                    </li>
+                </ol>
+
+                <br>
+                
+                <hr>
+                <br>
+                {% endblock %}
+                {% block precursos %}
+                <br>
+                <hr>
+                <br>
+                <ol class="libros">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ol>
+
+                <br>
+                
+                <hr>
+                <br>
+                {% endblock %}

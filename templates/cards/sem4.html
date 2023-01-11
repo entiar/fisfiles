@@ -1,0 +1,100 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+{% block principal %}
+<section class="services">
+    <div class="container">
+        <h2 class="subtitle">
+        Materias de Cuarto Trimestre <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+        </h2>
+        <p class="copy-section">
+        Contenido relacionado al plan de estudio del Cuarto semestre de la carrera de Ciencias Física y Energias Alternaticas. 
+        </p>
+        <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+            <div class="card"><!--comienso de la targeta 2-->
+                <a href="{% url 'sem4_1' %}">
+                <img src='{% static "imgs/tensorial.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-400
+                    </p>
+                    <h3 class="card-title">Análisi Tensorial<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Espacio Vectorial, Teoria Tensorial, Transformaciones de coordenadas,...
+                    </p>
+                    <a href="{% url 'sem4_1' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin del codigo de la targeta 2-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem4_2' %}">
+                <img src='{% static "imgs/calculo4.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-401
+                    </p>
+                    <h3 class="card-title">Calculo IV<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Numeros Complejos, Funciones analíticas, Transformacion Conformes,...
+                    </p>
+                    <a href="{% url 'sem4_2' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem4_3' %}">
+                <img src='{% static "imgs/a_numerico.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-402
+                    </p>
+                    <h3 class="card-title">Analisis Numérico<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Metodo Newton-Rapson, Metodo de la biseccion, Metodo Raje Kuta,...
+                    </p>
+                    <a href="{% url 'sem4_3' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem4_4' %}">
+                <img src='{% static "imgs/fis4.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        FIS-403
+                    </p>
+                    <h3 class="card-title">Mecánica Clásica<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Mecanica Newtoniana, Mecanica de Lagranje, Teoria de la mínima accion,...
+                    </p>
+                    <a href="{% url 'sem4_4' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card">
+                <a href="{% url 'sem4_5' %}">
+                <img src='{% static "imgs/electronica.png"%}' alt="" class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        ELT-404
+                    </p>
+                    <h3 class="card-title">Electrónica I<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Electronica analogica, Resistencias, Capasitores, Ley de Kilfchoft,...
+                    </p>
+                    <a href="{% url 'sem4_5' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!-- Fin del codigo de la targeta 1-->
+        </article>
+    </div>
+</section> 
+{% endblock %} 
+

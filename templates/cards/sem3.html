@@ -1,0 +1,82 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+{% block principal %}
+<section class="services">
+    <div class="container">
+        <h2 class="subtitle">
+        Materias de Tercer Trimestre <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+        </h2>
+        <p class="copy-section">
+        Contenido relacionado al plan de estudio de tercer semestre de la carrera de Ciencias Física y Energias Alternaticas. 
+        </p>
+        <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+            <div class="card"><!--comienso de la targeta 2-->
+                <a href="{% url 'sem3_1' %}">
+                <img src='{% static "imgs/estadistica.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-300
+                    </p>
+                    <h3 class="card-title">Probabilidad y Estadistica<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Variables estadisticas, Analisis Combinatorio, Probabilidades, etc.
+                    </p>
+                    <a href='{% url "sem3_1"%}' class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin del codigo de la targeta 2-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem3_2' %}">
+                <img src='{% static "imgs/ecuacionesD.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-301
+                    </p>
+                    <h3 class="card-title">Ecuaciones Diferenciales<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Grado de una ED, ED homogeneos, Teorema de Picard, etc.
+                    </p>
+                    <a href="{% url 'sem3_2' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem3_3' %}">
+                <img src='{% static "imgs/fis3.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        FIS-302
+                    </p>
+                    <h3 class="card-title">Física III<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Electroestatica, Ley de Coulom, Electromagnetismos, etc.
+                    </p>
+                    <a href="{% url 'sem3_3' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem3_4' %}"></a>
+                <img src='{% static "imgs/programacion2.png"%}' class="card-img">
+                <div class="card-text">
+                    <p class="card-list">
+                        INF-303
+                    </p>
+                    <h3 class="card-title">Programción II<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Programacion funcional, Programacíon POO, Base de datos, etc.
+                    </p>
+                    <a href="{% url 'sem3_4' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+        </article>
+    </div>
+</section>  
+{% endblock %} 

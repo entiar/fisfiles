@@ -1,0 +1,100 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+{% block principal %}
+<section class="services">
+    <div class="container">
+        <h2 class="subtitle">
+        Materias de Sexto Trimestre <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+        </h2>
+        <p class="copy-section">
+        Contenido relacionado al plan de estudio de Sexto semestre de la carrera de Ciencias Física y Energias Alternaticas. 
+        </p>
+        <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+            <div class="card"><!--comienso de la targeta 2-->
+                <a href="{% url 'sem6_1' %}">
+                <img src='{% static "imgs/MM2.png" %}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        MAT-600
+                    </p>
+                    <h3 class="card-title">Metodos Matemáticos II<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Metodo de Laplace, Series de Furier, Metodos numéricos,...
+                    </p>
+                    <a href="{% url 'sem6_1' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin del codigo de la targeta 2-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem6_2' %}">
+                <img src='{% static "imgs/optica.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        FIS-601
+                    </p>
+                    <h3 class="card-title">Óptica<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Reflección y refracción de la luz, Ley de Snell, Lentes,...
+                    </p>
+                    <a href="{% url 'sem6_2' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem6_3' %}">
+                <img src='{% static "imgs/laboratorio2.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        FIS-602
+                    </p>
+                    <h3 class="card-title">Laboratorio Medio II<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Efecto Fotoelectrico, La gota de Milikan,...
+                    </p>
+                    <a href="{% url 'sem6_3' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card"><!--Comienso de la targeta 3-->
+                <a href="{% url 'sem6_4' %}">
+                <img src='{% static "imgs/fis6.png"%}' class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        FIS-603
+                    </p>
+                    <h3 class="card-title">Termodinámica<span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Las tres Leyes de la Termodinámica, Entropía, Equilibrio Térmico,...
+                    </p>
+                    <a href="{% url 'sem6_4' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!--Fin de la targeta 3-->
+            <div class="card">
+                <a href="{% url 'sem6_5' %}">
+                <img src='{% static "imgs/electroninca3.png"%}' alt="" class="card-img">
+                </a>
+                <div class="card-text">
+                    <p class="card-list">
+                        ELT-604
+                    </p>
+                    <h3 class="card-title">Electrónica III
+                        <span class="point">.</span>
+                    </h3>
+                    <p class="card-copy">
+                        Electronica Digital, Codigos Binarios, Microprosesadores, Conpuertas Lógicas,...
+                    </p>
+                    <a href="{% url 'sem6_5' %}" class="card-button">Explorar</a>
+                </div>
+            </div><!-- Fin del codigo de la targeta 1-->
+        </article>
+    </div>
+</section> 
+{% endblock %} 

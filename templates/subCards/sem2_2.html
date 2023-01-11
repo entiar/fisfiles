@@ -1,0 +1,30 @@
+{% extends 'layout/base2.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href='{% static "css/style1.css" %}'>
+{% endblock %}
+                {% block videos %}
+                <strong>Curso de Algebra avanzada de la UNAM para ciencias puras y naturales.</strong><br>
+
+                <iframe class="frameV" width="560" height="315" src="https://www.youtube.com/embed/ItHwlDFAKFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                
+                {% endblock %}
+                
+                {% block libros %}
+                <u>
+                    <li>
+                    Este es un teto para libros     
+                    </li>
+                    <li>
+                        este es otro texto para libros
+                    </li>
+                </u>
+                {% endblock %}
+                {% block precursos %}
+                <u>
+                    <li>
+                        link de documenteos pdf para descargar y añadir
+                    </li>
+                </u>
+                {% endblock %}

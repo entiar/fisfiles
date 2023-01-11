@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href='{% static "css/style1.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero"> <!-- Este el logo-->
+
+        {% include 'layout/partials/menu.html' %}
+        <section class="services">
+            <div class="container">
+                <h2 class="subtitle">
+                ¿Que tipo de información esta buscando? <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                <p class="copy-section">
+                    Seleccione el tipo de recuros multimedia que desee del tema escogido.
+                </p>
+                <article class="container-cards"> <!--Comienso del código de las targetas 1-->
+                    <div class="card">
+                        <a href="#videos">
+                        <img src='{% static "imgs/videos.png" %}' alt="" class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                Cursos y tutoriales en videos.
+                            </p>
+                            <h3 class="card-title">Videos <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Recursos audio-visuales referemtes a la materia.
+                            </p>
+                            <a href="#videos" class="card-button">Explorar</a>
+                        </div>
+                    </div><!-- Fin del codigo de la targeta 1-->
+                    <div class="card"><!--comienso de la targeta 2-->
+                        <a href="#books">
+                        <img src='{% static "imgs/books.jpg" %}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                Libros digitales y textos cientificos.
+                            </p>
+                            <h3 class="card-title">Libros y textos <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Bibliografía, textos y artículos referentes a la materia.
+                            </p>
+                            <a href="#books" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin del codigo de la targeta 2-->
+                    <div class="card"><!--Comienso de la targeta 3-->
+                        <a href="#recursos">
+                        <img src='{%static "imgs/tests.jpg"%}' class="card-img">
+                        </a>
+                        <div class="card-text">
+                            <p class="card-list">
+                                Prácticas y ejercicios propuestos.
+                            </p>
+                            <h3 class="card-title">Recursos <span class="point">.</span>
+                            </h3>
+                            <p class="card-copy">
+                                Resolución de problemas y ejercicios propuestos.
+                            </p>
+                            <a href="#recursos" class="card-button">Explorar</a>
+                        </div>
+                    </div><!--Fin de la targeta 3-->
+                </article>
+            </div>
+        </section>        
+
+    </header>
+    <main> 
+              
+    </header>
+    <main> 
+        <section class="services" id="videos">
+            <div class="container">
+                <h2 class="subtitle">
+                Videos<span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                <p class="copy-section">
+                Recursos audio-visuales <br>
+
+                {% block videos %}{% endblock %}
+
+                <h2 class="subtitle">
+                Fin<span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+            </div>
+        </section> 
+        <section class="services" id="books">
+            <div class="container">
+                <h2 class="subtitle">
+                Libros Digitales <span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                {% block libros %}{% endblock %}
+                <h2 class="subtitle">
+                Fin<span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+            </div>
+        </section> 
+        <section class="services" id="recursos">
+            <div class="container">
+                <h2 class="subtitle">
+                Recursos de practica<span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+                {% block precursos %}{% endblock %}
+                <h2 class="subtitle">
+                Fin<span class="poin">.</span><!--Primer subtitulo de resumen del sitio -->
+                </h2>
+            </div>
+        </section> 
+    </main>
+    {% include 'layout/partials/footer.html'%}
+</body>
+</html>
