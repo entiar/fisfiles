@@ -152,3 +152,4 @@ whitenoise==6.3.0
 widgetsnbextension==4.0.3
 xdg==5
 zipp==3.10.0
+# este es un comentario para ver la actualización
